@@ -1,0 +1,146 @@
+.main {
+  font-family: "Mulish", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.heading {
+  font-size: 3rem;
+  text-align: center;
+}
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0;
+}
+
+.btn {
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.5em;
+  font-family: "Mulish", sans-serif;
+  font-size: 1rem;
+  flex-basis: 30%;
+  border: 2px solid #fff;
+  background: #fff;
+  flex-basis: 40%;
+  transition: 300ms ease;
+  max-width: 150px;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn-white {
+  margin-right: 1em;
+}
+.btn-black {
+  background: #040404;
+  border: 2px solid #040404;
+  color: #fff;
+}
+
+.main-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  margin: 1em 0;
+  text-align: center;
+}
+.text {
+  margin-bottom: 1em;
+}
+
+.btn-shop {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.hero-image img {
+  max-width: 150px;
+  margin: 0 0 2em 0;
+}
+.hero-image-1 img {
+  height: 200px;
+}
+.hero-image-2 img {
+  height: 300px;
+}
+
+.hero-image-3 img {
+  height: 400px;
+}
+
+@media only screen and (min-width: 800px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-text {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .text {
+    max-width: 400px;
+  }
+  .heading {
+    font-size: 3.5rem;
+    text-align: left;
+  }
+  .btn-group {
+    justify-content: flex-start;
+  }
+  .text {
+    text-align: left;
+  }
+  .hero-image {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .hero-image img {
+    max-width: 300px;
+    margin: 0;
+  }
+
+  /* .hero-image-1 {
+  }
+  .hero-image-2 {
+  }
+  .hero-image-3 {
+  } */
+
+  .hero-image-1 img {
+    height: 250px;
+  }
+  .hero-image-2 img {
+    height: 350px;
+    margin-left: 2em;
+  }
+
+  .hero-image-3 img {
+    height: 450px;
+    margin-left: 2em;
+  }
+}

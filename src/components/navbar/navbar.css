@@ -1,0 +1,65 @@
+.logo {
+  font-family: "Baloo Bhai 2", cursive;
+  color: #f1d5bb;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0c0b0b;
+  color: #fff;
+  border-radius: 15px;
+  padding: 1em;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 1 100%;
+  padding: 0;
+  margin: 0;
+  margin-left: 1em;
+}
+li {
+  padding: 0 0.5em;
+}
+
+a {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+@media only screen and (min-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    height: 90vh;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-left: 1em;
+    position: absolute;
+    left: 0;
+    top: 20px;
+  }
+  .list {
+    flex-direction: column;
+    margin: auto 0;
+    justify-content: center;
+  }
+  .logo {
+    font-size: 3rem;
+  }
+  li:nth-of-type(6) {
+    margin-top: auto;
+  }
+  li:nth-of-type(1) {
+    margin-top: auto;
+  }
+  li:not(li:nth-of-type(6)) {
+    padding-bottom: 2.5em;
+  }
+  a {
+    font-size: 1.4rem;
+  }
+}

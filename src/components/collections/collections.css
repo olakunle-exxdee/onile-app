@@ -1,0 +1,47 @@
+.collection-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em 0;
+  text-align: center;
+}
+.collection-container h1 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+.collection-img {
+  width: 300px;
+  margin: 0 auto;
+}
+.collection-img p {
+  margin: 1rem 0;
+}
+@media only screen and (min-width: 800px) {
+  .collection-container {
+    width: 100%;
+    padding: 0;
+  }
+  .collection-container h1 {
+    font-family: "Mulish", sans-serif;
+    font-weight: 300;
+    margin: 0 0 1rem 0;
+  }
+  .collection-img p {
+    margin: 1rem 0;
+  }
+  .collection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+  }
+  .collection-img {
+    width: 280px;
+    margin: 0 auto;
+  }
+}
